@@ -49,9 +49,12 @@ double task1()
 
 }
 
-int task2()
+int task2(int& A)
 {
-    
+    cout << "Enter A:" << endl;
+    cout << " " << endl;
+    prov(A);
+    return A;
 }
 
 void task3()
