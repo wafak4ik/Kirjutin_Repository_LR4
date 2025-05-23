@@ -44,9 +44,12 @@ int prov(double& num1)
 	return num1;
 }
 
-double task1()
+double task1(double& x)
 {
-
+    cout << "Enter a real number x (No more than 15 characters after the dot):" << endl;
+    cout << " " << endl;
+    prov(x);
+    return x;
 }
 
 int task2(int& A)
@@ -97,10 +100,10 @@ int main()
                 cout << " " << endl;
                 return 0;
             case 1:
-                task1(x);
+                task1();
                 break;
             case 2:
-                task2(A);
+                task2();
                 break;
             case 3:
                 task3();
