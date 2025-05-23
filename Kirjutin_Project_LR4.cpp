@@ -1,6 +1,8 @@
 #include <iostream>
 #include <limits>
 #include <cmath>
+#include <algorithm>
+#include <string>
 
 using namespace std;
 
@@ -54,9 +56,15 @@ int task2()
     
 }
 
-void task3()
-{
-
+bool task3(bool& y, double& x, int& A)
+{   
+    string str = to_string(abs(x));
+    char target = '0' + A;
+    
+    if (count(str.begin(), str.end(), target) == 0)
+    {
+        y = true;
+    }
 }
 
 void task4()
@@ -66,6 +74,7 @@ void task4()
 
 int main() 
 {
+    bool y, z;
     double x;
     int h;
     int A;
