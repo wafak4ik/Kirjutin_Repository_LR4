@@ -66,7 +66,7 @@ bool task4(bool& z, double& x, int& A)
     string str = to_string(abs(x));
     char target = '0' + A;
     
-    if (count(str.begin(), str.end(), target) == 0)
+    if (count(str.begin(), str.end(), target) > 2)
     {
         z = true;
     }
