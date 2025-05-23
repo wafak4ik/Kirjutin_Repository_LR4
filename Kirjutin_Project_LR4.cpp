@@ -65,6 +65,8 @@ bool task3(bool& y, double& x, int& A)
     {
         y = true;
     }
+    
+    return y;
 }
 
 void task4()
