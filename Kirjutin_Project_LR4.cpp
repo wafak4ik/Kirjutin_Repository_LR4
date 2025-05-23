@@ -22,7 +22,7 @@ int prov(int& num1)
 	}
 	cout << " " << endl;
     cout << "You entered: " << num1 << endl;
-	cout << " " << endl;
+	cout << "================================================================ " << endl;
 	return num1;
 }
 
@@ -116,20 +116,35 @@ int main()
         {
             case 0:
                 cout << "Shutting down the program. Goodbye!" << endl;
-                cout << " " << endl;
+                cout << "====================================================================" << endl;
                 return 0;
             case 1:
-                task1();
+                task1(x);
                 break;
             case 2:
-                task2();
+                task2(A);
                 break;
             case 3:
-                task3();
+                task3(y, x, A);
+                if (y == true)
+                {
+                    cout << x << " doesn't contain " << A << endl;
+                }
+                else
+                {
+                    cout << x << " contains " << A << endl;
+                }
                 break;
             case 4:
-                cout << "Integer part of the sum: " << task4(x, y, z) << endl;
-                cout << " " << endl;
+                task4(z, x, A);
+                if (z == true)
+                {
+                    cout << x << " contains " << A << " more than two times" << endl;
+                }
+                else
+                {
+                    cout << x << " doesn't contain " << A << " more than two times" << endl;
+                }
                 break;
             default:
                 cout << "Invalid option. Please enter a valid number." << endl;
